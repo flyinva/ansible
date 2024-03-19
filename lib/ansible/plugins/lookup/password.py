@@ -4,7 +4,6 @@
 # (c) 2017 Ansible Project
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 from __future__ import annotations
-import errno
 
 DOCUMENTATION = """
     name: password
@@ -131,6 +130,7 @@ import os
 import string
 import time
 import hashlib
+import errno
 
 from ansible.errors import AnsibleError, AnsibleAssertionError
 from ansible.module_utils.common.text.converters import to_bytes, to_native, to_text
